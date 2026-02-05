@@ -33,5 +33,8 @@ print() # Extra Blank Line
 
 print("I can repeat myself!")
 count = int(input("How many times should I repeat myself? "))
+while count == ""
+    print("please enter count")
+    count = int(input("How many times should I repeat myself? "))
 for time in range(count):
     print("I know a song that drives people crazy,")
