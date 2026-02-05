@@ -14,11 +14,11 @@ while fname == "" or not fname.isalpha():
 
 # Forced to enter last name
 lname = input("Please enter your last name: ")
-while lname == "" or not fname.isalpha():
+while lname == "" or not lname.isalpha():
     lname = input("Name Entry Invalid Please reenter your last name: ")
 
 hobby = input("what do you like to do for fun?: ")
-while hobby == "" or not fname.isalpha():
+while hobby == "" or not hobby.isalpha():
     hobby = input("Hobby Entry Invalid Please reenter your Hobby: ")
 
 
