@@ -31,9 +31,10 @@ print(f"Nice to meet you {fname} {lname}!!!")
 print(f"I'm glad you like to do {hobby}.")
 print() # Extra Blank Line
 
+# Introduction to for loops
 print("I can repeat myself!")
 count = int(input("How many times should I repeat myself? "))
-while count == ""
+while count == "":
     print("please enter count")
     count = int(input("How many times should I repeat myself? "))
 for time in range(count):
