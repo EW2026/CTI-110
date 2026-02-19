@@ -1,17 +1,10 @@
-# Evan Westcott
+# Evan westmost
 # 20260211
 # P1HW2
 # Allows users to budget for their vacations
 
 ############################# Function Definitions ############################################
 
-def menu():
-    print("***************************************")
-    print("Welcome to the travel budget calculator")
-    print("***************************************")
-    print("Please Choose from the following options:")
-    print("1 for yes")
-    print("2 for no")
 
     
 # Choice Validation
@@ -20,7 +13,7 @@ def character_valid(character):
         character = input("Input invalid, please enter your vacation spot: ")
 
     print("Thank you for your input")
-    return character.lower
+    return character
 
 def number_valid(number):
     while number == "" or not number.isdigit():
@@ -52,10 +45,12 @@ def trip():
 
     total = transportation_cost + room + food + souvenir_cost
 
+    balance = budget - total
     print("**************************")
     print(f"Your budget is ${budget}")
     print(f"You wish to go to {destination}")
     print(f"The total of your estimated costs is ${total}")
+    print(f"Your remaining balance is ${balance}")
 
     
     if budget > total:
@@ -65,7 +60,7 @@ def trip():
 
     elif budget == total:
         print("*****************************************************************************************************************************")
-        print("Your budget is equal to your total expenditures, it is reccomeneded that you either budget more or spend less money😬😬😬😬")
+        print("Your budget is equal to your total expenditures, it is recommended that you either budget more or spend less money😬😬😬😬")
         print("*****************************************************************************************************************************")
 
     else:
@@ -87,25 +82,22 @@ def main():
     while choice != "2":
 
         # Shows Menu
-        menu()
-
-        choice = input("Do you wish to continue? y/n: ")
-        while choice == "" or not choice.isdigit():
-            choice = input("please enter a valid choice: ")
-        
+        print("***************************************")
+        print("Welcome to the travel budget calculator")
+        print("***************************************")  
         print("Let's budget for your trip!")
+        trip()
         
         
-        # Runs trip function
-        if choice == "1":
-
-            trip()
-            
+        choice = input("Would you like to continue? (1 for yes/ 2 for no)")
+        while choice == "" or not choice.isdigit():
+            choice = input("improper response, please enter 1 for yes or 2 for no.: ")
+        
     # Exits Loop
-    else:
-        print("************************************************************")
-        print("Thank you for trying my budget calcaulator. Have a nice day!")
-        print("************************************************************")
+    
+    print("************************************************************")
+    print("Thank you for trying my budget calculator. Have a nice day!")
+    print("************************************************************")
 
 main()
 
