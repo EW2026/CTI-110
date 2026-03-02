@@ -12,12 +12,14 @@ from decimal import Decimal, ROUND_HALF_UP
 
 def modules():
     grade_list = []
+    
     module_1 = grade_list.append(float(input("Please enter your grade for module 1: ")))
     module_2 = grade_list.append(float(input("Please enter your grade for module 2: ")))
     module_3 = grade_list.append(float(input("Please enter your grade for module 3: ")))
     module_4 = grade_list.append(float(input("Please enter your grade for module 4: ")))
     module_5 = grade_list.append(float(input("Please enter your grade for module 5: ")))
     module_6 = grade_list.append(float(input("Please enter your grade for module 6: ")))
+    
     return grade_list
     
     
