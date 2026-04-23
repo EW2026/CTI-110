@@ -1,0 +1,16 @@
+def add():
+    num1 = int(input("What is your number?: "))
+    num2 = int(input("What is your next number?: "))
+    result = num1 + num2
+    print(result)
+    return result, num1, num2
+
+
+def main():
+    pass
+
+# Call Main
+if __name__ == "__main__":  # IF there is a main in this file
+    main()
+    addition_result, number1, number2 = add()
+    print(f"{number1} + {number2} = {addition_result}")
